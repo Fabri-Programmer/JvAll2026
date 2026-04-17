@@ -5,6 +5,15 @@
 package practicajavafull;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 //import javax.swing.JOptionPane;
 
 public class PracticaJavaFull {
@@ -379,7 +388,188 @@ public class PracticaJavaFull {
     
     /////
     
+    PROFE TAREA: 
+    
+    
+       /*
+        ArrayList<String> frutas = new ArrayList<>();
+        frutas.add("Manzana");
+        frutas.add("Platano");
+        frutas.add("Fresa");
+        System.out.println();
+        
+        System.out.print("Posicion: "+frutas.get(1)); //mostrar la posicion del valor 
+        frutas.set(2, "Bomba"); //Para cambiar valores
+        System.out.println();
+        System.out.print("Si existe o no: "+frutas.contains("estudio")); //Si existe ese valor en el array
+       
+        
+        System.out.println();
+        System.out.print(frutas.size());//para saber cuantas valores hay en el array 
+        
+        for(String Frutas:frutas) //Mostrar todos los valores del array
+        {
+        System.out.println();
+        System.out.print(Frutas);
+        }
+        
+        //System.out.print(frutas);
+
+    List<String> listanombres = new ArrayList<>(); 
+    listanombres.add("Fabri");
+    listanombres.add("Jair");
+    listanombres.add("Luis");
+    listanombres.add("Pedro");
+    
+    Collections.sort(listanombres); // ordenadar la lista
+    System.out.print("Lista ordenada: "+listanombres);
+    
+    String buscar = "Pedro";
+    
+    int indice = Collections.binarySearch(listanombres, buscar); // para buscar si se encuentra en el indice y retorna el valor
+    
+    
+    if(indice>=0)
+    {
+    System.out.println();
+    System.out.print(buscar+" Encontrado en el indice: "+indice);
+    }
+    else
+    {
+    
+    System.out.print(buscar+" Valor no encontrado: "+indice);
+    }
+    
+   }
+    
+
+        
+        
+        
+        Map<String, Double> inventario = new HashMap<>();
+        
+        inventario.put("Galleta", 15.0);
+        inventario.put("Manzana",1.00);
+        inventario.put("ps5", 1.500);
+        
+        inventario.put("Manzana", 1.20); //Cambiar el valor de la clave
+        inventario.remove("ps5"); //Cambiar el valor de la clave
+        
+        System.out.println(inventario.get("Galleta")); // para buscar el valor de la clave
+        System.out.println(inventario.get("Manzana")); // para buscar el valor de la clave
+        
+        
+        for(Map.Entry<String,Double> entrada : inventario.entrySet())
+        {
+       System.out.println(entrada.getKey() + " S/: "+entrada.getValue()); //retorna todos las claves con sus respectivos valores
+        }
+        
+        System.out.println(inventario);
+        System.out.println();
+        
+
+        
+        
+        
+        
+        Set<String> ciudades = new HashSet<>(); // los valores no se repiten, // los valores no se pueden modificar 
+        
+        ciudades.add("Madrid");
+        ciudades.add("Lima");
+        ciudades.add("Santiago de chile");
+       
+        ciudades.add("Lima");
+        ciudades.remove("Madrid"); //remover el valor 
+        
+        
+        
+        System.out.println(ciudades.size()); // tamaño
+        
+        for(String Ciudades: ciudades)
+        {
+        System.out.println(Ciudades);
+        
+        }
+        
+        if(ciudades.contains("Lima")) // si contiee 
+        {
+        System.out.print("Si esta en peru");
+        }
+        else
+        {
+        System.out.print("No esta en peru");
+        }
+        
+        
+   
+        
+        
+        
+        
+        LinkedList<String> ListaFrutas = new LinkedList<>(); // permite agregar valores sea al inicio o al final 
+        ListaFrutas.add("Papaya");
+        ListaFrutas.add("uva");
+        ListaFrutas.add("Platano");
+        
+        ListaFrutas.addFirst("Primero");
+        ListaFrutas.addLast("Ultimo");
+        System.out.println("Fruta primera: "+ListaFrutas.getFirst());
+        System.out.println("Fruta primera: "+ListaFrutas.getLast());
+        
+        System.out.println(ListaFrutas.indexOf("uva")); // Si el valor se encuentra en la lista
+        System.out.println(ListaFrutas.remove("Papaya")); // eliminar 
+        System.out.println("Se encuentra en: "+ListaFrutas.set(0, "CambioElValor")); //cambiar el valor
+       
+        System.out.println(ListaFrutas.get(3)); // para saber en el indice donde se encuentra 
+        
+        
+        System.out.println(ListaFrutas);
+        
+        
+    
+    
+    TAREA
+    
+     /*
+    ArrayList<String> Estudiantes = new ArrayList<>();
+    Estudiantes.add("Fabri");
+    Estudiantes.add("juan");
+    Estudiantes.add("sebas");
+    Estudiantes.add("misael");
+    Estudiantes.add("Fabri");
+    
+    for(String Imprimir: Estudiantes)
+    {
+    System.out.println(Imprimir);
+    
+    }
+    
+    
+    Set<String> Correos = new HashSet<>();
+    
+    Correos.add("loquito@hotmail.com");
+    Correos.add("loquito@hotmail.com");
+    Correos.add("fabri@gmail.com");
+    
+    System.out.println("Numero de valores: "+Correos.size());
+    
+    
+    Map<String, Double> Estu = new HashMap<>();
+    Estu.put("Fabri", 15.00);
+    Estu.put("ricardo", 18.00);
+    Estu.put("perez", 19.00);
+    
+    System.out.println(Estu.get("Fabri"));
+   
+
+    }
 */
+    
+    
+    
+        
+    
+
    
     
     // } 
