@@ -5,13 +5,13 @@
 package practicajavafull;
 
 import java.util.Scanner;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 public class PracticaJavaFull {
 
     
      
-    public static void main(String[] args) {
+    public static void main(String[] args){
         
         
      // almacena un caracter char caracter = 'g';
@@ -63,8 +63,8 @@ public class PracticaJavaFull {
      JOptionPane.showMessageDialog(null, "Tu letra favotira es: "+f);
      JOptionPane.showMessageDialog(null, "Tu Nombre es: "+d); */
      
-    /* 
-    double n1,n2,n3,n4;
+     /* 
+     double n1,n2,n3,n4;
      
     
      
@@ -88,38 +88,38 @@ public class PracticaJavaFull {
      */
     
     
-    //Suma de promedio de notas
-    /*
-    int n1,n2,n3,n4,promedio;
+      //Suma de promedio de notas
+     /*
+     int n1,n2,n3,n4,promedio;
     
-    System.out.print("Ingresa nota 1: ");
-    n1 = entrada.nextInt();
-    System.out.print("Ingresa nota 2: ");
-    n2 = entrada.nextInt();
-    System.out.print("Ingresa nota 3: ");
-    n3 = entrada.nextInt();
-    System.out.print("Ingresa nota 4: ");
-    n4 = entrada.nextInt();
+     System.out.print("Ingresa nota 1: ");
+     n1 = entrada.nextInt();
+     System.out.print("Ingresa nota 2: ");
+     n2 = entrada.nextInt();
+     System.out.print("Ingresa nota 3: ");
+     n3 = entrada.nextInt();
+     System.out.print("Ingresa nota 4: ");
+     n4 = entrada.nextInt();
     
-    promedio= (n1+n2+n3+n4) / 4;
+     promedio= (n1+n2+n3+n4) / 4;
     
-    System.out.print("Tu promedio es: "+promedio);
-    */
+     System.out.print("Tu promedio es: "+promedio);
+     */
     
     
-    //Calculando Sueldo semanal por horas trabajadas 
+     //Calculando Sueldo semanal por horas trabajadas 
     
-    /*double S_hora, SueldoSemanal;
+     /*double S_hora, SueldoSemanal;
     
-    SueldoSemanal = 3.50;
+     SueldoSemanal = 3.50;
     
-    System.out.print("¿Cuantas horas trabajas en la semana?: ");
-    S_hora = entrada.nextDouble();
+     System.out.print("¿Cuantas horas trabajas en la semana?: ");
+     S_hora = entrada.nextDouble();
     
-    SueldoSemanal = (SueldoSemanal * S_hora);
+     SueldoSemanal = (SueldoSemanal * S_hora);
     
-    System.out.print("Tu sueldo semanal es:"+SueldoSemanal);
-    */
+     System.out.print("Tu sueldo semanal es:"+SueldoSemanal);
+     */
     
     /*
     double L2, J3;
@@ -248,6 +248,7 @@ public class PracticaJavaFull {
     
     }
     if(Salario > 40){
+    
         
         
         total= (40*16) + ((Salario-40)*20);
@@ -255,6 +256,9 @@ public class PracticaJavaFull {
     }
     */
     
+    
+    
+    /*
     
     int a,b,c;
     
@@ -278,5 +282,106 @@ public class PracticaJavaFull {
     {
       System.out.print("El numero mayor es el 3 con: "+c);
     }
-}
+    
+    
+    
+    
+    int a,b,total;
+    
+    System.out.print("Ingrese que operacion le gustaria realizar: ");
+    s = entrada.nextLine();
+    
+    if(s.equalsIgnoreCase("s")) 
+        //EquialsIgnoreCase para min
+    {
+        System.out.print("Ingrese valor 1: ");
+        a = entrada.nextInt();
+        System.out.print("Ingrese valor 2: ");
+        b= entrada.nextInt();
+        total= (a+b);
+        System.out.print("Este es tu total: "+total);
     }
+    else if(s.equalsIgnoreCase("r"))
+    {
+        System.out.print("Ingrese valor 1: ");
+        a = entrada.nextInt();
+        System.out.print("Ingrese valor 2: ");
+        b= entrada.nextInt();
+        total= (a+b);
+        System.out.print("Este es tu total: "+total);
+    }
+    else if(s.equalsIgnoreCase("p"))
+    {
+          System.out.print("Ingrese valor 1: ");
+        a = entrada.nextInt();
+        System.out.print("Ingrese valor 2: ");
+        b= entrada.nextInt();
+        total= (a+b);
+        System.out.print("Este es tu total: "+total);
+    }
+    else if(s.equalsIgnoreCase("d"))
+    {
+        System.out.print("Ingrese valor 1: ");
+        a = entrada.nextInt();
+        System.out.print("Ingrese valor 2: ");
+        b= entrada.nextInt();
+        total= (a+b);
+       System.out.print("Este es tu total: "+total);
+    }
+
+    
+    char a;
+    int a1,a2,s,r,m,d;
+    
+    System.out.print("ingrese que op te gustaria realizar: ");
+    a = entrada.nextLine().charAt(0);
+    
+    switch(a)
+    {
+        case 'S':
+        case 's': System.out.print("ingrese valor 1: ");
+        a1 = entrada.nextInt();
+        System.out.print("Ingrese valor 2: ");
+        a2 = entrada.nextInt();
+        s = (a1+a2);
+        System.out.print("El total es: "+s );
+        
+        default: System.out.print("finish");break;
+        
+        
+    }
+    
+    
+
+    
+    
+    final int saldo = 1000;
+    int Ingresado, total;
+    char a;
+    
+    System.out.print("Ingrese que operacion te gustaria realizar: ");
+    a = entrada.nextLine().charAt(0);
+    
+    switch(a)
+    {
+    
+        case 'I': System.out.print("Cuanto dinero quieres ingresar: ");
+        Ingresado = entrada.nextInt();
+        total = (saldo+Ingresado);
+        System.out.print("El total es: "+total); break;
+        case 'R': System.out.print("Cuanto dinero quieres retirar: ");
+        Ingresado = entrada.nextInt();
+        total = (saldo-Ingresado);
+        System.out.print("El total es: "+total); break;
+        case 'S': System.out.print("Saliste"); break;
+        default: break;
+    
+    
+    /////
+    
+*/
+   
+    
+    // } 
+ //} 
+    
